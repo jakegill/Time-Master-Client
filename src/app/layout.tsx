@@ -4,6 +4,7 @@ import "./globals.css";
 
 const albert_sans = Albert_Sans({ subsets: ["latin"] });
 
+
 export const metadata: Metadata = {
   title: "Time Master",
   description: "Track your hours.",
