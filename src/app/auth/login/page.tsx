@@ -58,11 +58,11 @@ export default function RegisterForm() {
 			console.log(decodedToken);
 
 			if (decodedToken.role === "employee") {
-				router.push("/employee/home");
+				router.push("/employee");
 			} else if (decodedToken.role === "manager") {
-				router.push("/admin/dashboard");
+				router.push("/management");
 			} else if (decodedToken.role === "admin") {
-				router.push("/admin/dashboard");
+				router.push("/management");
 			} else if (decodedToken.role === "superAdmin") {
 				router.push("/superadmin/home");
 			}
@@ -77,7 +77,7 @@ export default function RegisterForm() {
 	return (
 		<div className="w-[100vw] h-[100vh] bg-[#f5f3f4] py-[15vh]">
 			<div className="flex flex-col max-w-md min-w-xs mx-auto">
-				<h2 className="py-[1vh]">Safety & Quality Control</h2>
+				<h2 className="py-[1vh]">Timemaster PRO</h2>
 				<form className="bg-white rounded px-8 pt-6 pb-4 shadow-md" onSubmit={handleSubmit(loginUser)}>
 					<div className="mb-3">
 						<h2 className="text-2xl mb-5">Log in</h2>
