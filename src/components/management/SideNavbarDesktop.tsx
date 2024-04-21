@@ -11,7 +11,7 @@ import {
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-export default function SideNavbarMobile() {
+export default function SideNavbarDesktop() {
 	const pathname = usePathname();
 
 	const isActive = (path: string) => {

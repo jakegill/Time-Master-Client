@@ -1,5 +1,5 @@
 "use client";
-import { IconListCheck, IconFileDescription } from "@tabler/icons-react";
+import { IconListCheck } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import { jwtDecode } from "jwt-decode";
@@ -23,26 +23,21 @@ export default function InspectorHome() {
 	}, []);
 
 	return (
-		<div className="h-full grid grid-rows-[0.5fr_0.5fr]">
-			<div className="max-h-[40vh]">
-				<div className="flex gap-[1vw] items-center font-semibold h-[4vh]">
-					<IconListCheck />
-					<h2>My Projects</h2>
-				</div>
-				<div className="max-h-full overflow-y-scroll">
-					{Array.isArray(projects) &&
-						projects.map((project) => (
-							<Link
-								href={`/inspector/form/${project._id}`}
-								key={project._id}
-								className="flex justify-between items-center border-b border-darkest/10 p-2"
-							>
-								<h3>{project.projectName}</h3>
-								<IconChevronRight />
-							</Link>
-						))}
-				</div>
+		<>
+			<h2 className="text-xl text-neutral-dark">My Projects</h2>
+			<div className="max-h-full overflow-y-scroll">
+				{Array.isArray(projects) &&
+					projects.map((project) => (
+						<Link
+							href={`/inspector/form/${project._id}`}
+							key={project._id}
+							className="flex justify-between items-center border-b border-darkest/10 p-2"
+						>
+							<h3>{project.projectName}</h3>
+							<IconChevronRight />
+						</Link>
+					))}
 			</div>
-		</div>
+		</>
 	);
 }
