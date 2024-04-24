@@ -73,32 +73,17 @@ export default function SideNavbarMobile({ isHidden, setIsSideMenuHidden }: Side
 							<h3 className="py-2 text-neutral-medium">Timelogs</h3>
 							<ul className="flex flex-col gap-2">
 								<Link
-									href="/employees/timelogs/help"
+									href="/employee/timelogs"
 									className={
-										isActive("/employees/timelogs/help")
-											? "flex items-center gap-2 px-4 py-2 rounded-md bg-primary-medium text-primary-lightest font-semibold"
-											: "flex items-center gap-2 px-4 py-2 text-neutral-medium"
-									}
-								>
-									<IconListCheck
-										size={24}
-										stroke={isActive("/employees/timelogs/help") ? "hsl(202, 100%, 95%)" : "hsl(210, 16%, 82%)"}
-										color={isActive("/employees/timelogs/help") ? "hsl(202, 100%, 95%)" : "hsl(211, 10%, 58%)"}
-									/>
-									Request Management
-								</Link>
-								<Link
-									href="/employees/timelogs/create"
-									className={
-										isActive("/employees/timelogs/create")
+										isActive("/employee/timelogs")
 											? "flex items-center gap-2 px-4 py-2 rounded-md bg-primary-medium text-primary-lightest font-semibold"
 											: "flex items-center gap-2 px-4 py-2 text-neutral-medium"
 									}
 								>
 									<IconPlaylistAdd
 										size={24}
-										stroke={isActive("/employees/timelogs/create") ? "hsl(202, 100%, 95%)" : "hsl(210, 16%, 82%)"}
-										color={isActive("/employees/timelogs/create") ? "hsl(202, 100%, 95%)" : "hsl(211, 10%, 58%)"}
+										stroke={isActive("/employee/timelogs") ? "hsl(202, 100%, 95%)" : "hsl(210, 16%, 82%)"}
+										color={isActive("/employee/timelogs") ? "hsl(202, 100%, 95%)" : "hsl(211, 10%, 58%)"}
 									/>
 									View Timelogs
 								</Link>

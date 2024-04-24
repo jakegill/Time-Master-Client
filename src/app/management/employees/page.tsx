@@ -65,7 +65,7 @@ function Page() {
 
 	return (
 		<>
-			<h2 className="py-2 text-xl text-neutral-dark">Manage Employees</h2>
+			<h2 className="py-2 text-xl text-neutral-dark">Manage Employees & Managers</h2>
 			<SearchEmployee />
 			<div className="h-full overflow-y-scroll">
 				{isLoading ? (
@@ -81,6 +81,7 @@ function Page() {
 							>
 								{`${employee.name}`}
 								<div className="flex gap-2">
+									{`${employee.role}`}
 									<IconTrash
 										className="rounded-lg cursor-pointer hover:bg-accent-red-lightest"
 										color="hsl(356, 75%, 53%)"

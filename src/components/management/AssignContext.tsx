@@ -51,7 +51,7 @@ export const AssignContextProvider: React.FC<{ children: ReactNode }> = ({ child
 				},
 				body: JSON.stringify({
 					employees: selectedEmployees,
-					projects: selectedProject,
+					project: selectedProject,
 				}),
 			});
 			if (!res.ok) {

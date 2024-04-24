@@ -68,19 +68,19 @@ export default function SideNavbarMobile({ isHidden, setIsSideMenuHidden }: Side
 									Home
 								</Link>
 								<Link
-									href="/management/analytics"
+									href="/management/timelogs"
 									className={
-										isActive("/management/analytics")
+										isActive("/management/timelogs")
 											? "flex items-center gap-2 px-4 py-2 rounded-md bg-primary-medium text-primary-lightest font-semibold"
 											: "flex items-center gap-2 px-4 py-2 text-neutral-medium"
 									}
 								>
 									<IconChartBar
 										size={24}
-										stroke={isActive("/management/analytics") ? "hsl(202, 100%, 95%)" : "hsl(210, 16%, 82%)"}
-										color={isActive("/management/analytics") ? "hsl(202, 100%, 95%)" : "hsl(211, 10%, 58%)"}
+										stroke={isActive("/management/timelogs") ? "hsl(202, 100%, 95%)" : "hsl(210, 16%, 82%)"}
+										color={isActive("/management/timelogs") ? "hsl(202, 100%, 95%)" : "hsl(211, 10%, 58%)"}
 									/>
-									Analytics
+									Timelogs
 								</Link>
 							</ul>
 						</div>

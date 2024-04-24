@@ -29,7 +29,7 @@ export default function InspectorHome() {
 				{Array.isArray(projects) &&
 					projects.map((project) => (
 						<Link
-							href={`/inspector/form/${project._id}`}
+							href={`/employee/projects?p=${project._id}`}
 							key={project._id}
 							className="flex justify-between items-center border-b border-darkest/10 p-2"
 						>
